@@ -15,7 +15,7 @@ function Header() {
             <img src={logo} width={60} height={60} className='rounded-full' />
             <div className='mx-5 rounded-full flex bg-slate-300 text-black p-2 w-full'>
                 <HiMagnifyingGlass />
-                <input type="text" placeholder='Search Games' className='px-3 bg-transparent outline-none' />
+                <h2 className='px-5 font-bold'>Select Game from the Genre list</h2>
             </div>
             <div className='mx-5 rounded-full flex bg-slate-300 text-black p-2 cursor-pointer text-[30px]'>
                 {theme == 'light' ? <IoMoon onClick={() => setTheme('dark')}/> : <IoMdSunny onClick={() => setTheme('light')} />}

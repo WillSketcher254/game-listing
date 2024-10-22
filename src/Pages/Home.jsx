@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GenreList from '../Components/GenreList'
 import GlobalApi from '../Services/GlobalApi'
-import Banner from '../Components/Banner';
+// import Banner from '../Components/Banner';
 import TrendingGames from '../Components/TrendingGames';
 import GamesByGenresId from '../Components/GamesByGenresId';
 
@@ -37,9 +37,9 @@ function Home() {
       <div className='col-span-4 md:col-span-3'>
         {allGameList?.length > 0 &&gameListByGenres.length>0?
         <div>
-        <Banner gameBanner={allGameList[0]} />
-        <TrendingGames gameList ={allGameList}/>
+        {/* <Banner gameBanner={allGameList[0]} /> */}
         <GamesByGenresId gameList = {gameListByGenres}/>
+        <TrendingGames gameList ={allGameList}/>
         </div>
           : null}
       </div>

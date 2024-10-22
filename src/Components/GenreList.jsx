@@ -15,7 +15,7 @@ function GenreList({genreID, selectedGenresName}) {
         })
     }
     return (
-        <div className='px-3 rounded-xl bg-slate-300 dark:bg-slate-900 sticky top-0'>
+        <div className='px-3 rounded-xl bg-slate-300 dark:bg-slate-900 '>
             
             <h2 className=' text-[30px] font-bold px-8'>Genre</h2>
             {genreList.map((item, index)=>(
